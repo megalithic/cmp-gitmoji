@@ -1,14 +1,13 @@
-# cmp-emoji
+# cmp-gitmoji
 
-nvim-cmp source for emojis.
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp) source for [gitmoji](https://gitmoji.dev)s.
 
 # Setup
 
 ```lua
 require'cmp'.setup {
   sources = {
-    { name = 'emoji' }
+    { name = 'gitmoji' }
   }
 }
 ```
-
