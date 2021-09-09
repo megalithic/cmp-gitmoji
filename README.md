@@ -11,3 +11,27 @@ require'cmp'.setup {
   }
 }
 ```
+
+### Additional Setup
+
+You might want to trigger this nvim-cmp source _only_ for `gitcommit` FileType:
+
+__vim__:
+```viml
+autocmd FileType gitcommit lua require'cmp'.setup.buffer {
+\   sources = {
+\     { name = 'gitmoji' }
+\   }
+\ }
+```
+
+__lua__:
+```lua
+vim.cmd([[
+  autocmd FileType gitcommit lua require'cmp'.setup.buffer {
+  \   sources = {
+  \     { name = 'gitmoji' }
+  \   }
+  \ }
+]])
+```
